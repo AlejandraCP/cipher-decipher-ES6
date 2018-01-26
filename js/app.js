@@ -4,7 +4,7 @@ let cipher = () => {
   let input = $('#text-cipher');
   let phrase = input.val();
   let charValue = 0;
-  let cipherPhrase = "";
+  let cipherPhrase = '';
   // Ciclo que itera por cada elemento de phrase.
   for (let i = 0; i < phrase.length; i++) {
     // Obtiene el valor ASCII del elemento.
@@ -30,14 +30,13 @@ let cipher = () => {
   // return alert("El texto cifrado es: " + cipherPhrase);
 };
 
-
 // Descifra un texto codificado por el cifrado César.
 let deCipher = () => {
   // Se obtiene el texto a descifrar
   let input = $('#text-cipher');
   let phrase = input.val();
   let charValue2 = 0;
-  let deCipherPhrase = "";
+  let deCipherPhrase = '';
   for (var i = 0; i < phrase.length; i++) {
     // Obtiene el valor ASCII del elemento.
     charValue2 = phrase.charCodeAt(i);
@@ -62,3 +61,8 @@ let btnDecipher = $('#decipher');
 btnCipher.on('click', cipher);
 btnDecipher.on('click', deCipher);
 
+// Animación
+
+$('.hover').mouseleave(function() {
+  $(this).removeClass('hover');
+});
