@@ -91,3 +91,7 @@ figure.snip.hover p {
 .result {
   padding: 2rem;
 }
+
+.buttons button {
+  margin-top: 1rem;
+}
