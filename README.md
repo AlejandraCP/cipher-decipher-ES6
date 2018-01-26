@@ -12,8 +12,8 @@ El usuario podrá descifrar el texto cifrado.
 
 ## Herramientas  
 
-*Bootstrap 4.  
-*Jquery.
+* Bootstrap 4.  
+* Jquery.
 
 ## Vista Desktop
 
