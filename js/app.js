@@ -1,11 +1,11 @@
 // Cifra un texto mediante el cifrado César.
-function cipher() {
+let cipher = () => {
   // Se obtiene el texto a cifrar.
-  var phrase = prompt("Escribe el texto a cifrar");
-  var charValue = 0;
-  var cipherPhrase = "";
+  let phrase = prompt("Escribe el texto a cifrar");
+  let charValue = 0;
+  let cipherPhrase = "";
   // Ciclo que itera por cada elemento de phrase.
-  for (var i = 0; i < phrase.length; i++) {
+  for (let i = 0; i < phrase.length; i++) {
     // Obtiene el valor ASCII del elemento.
     charValue = phrase.charCodeAt(i);
     // Si es mayor o igual a 65 y menor o igual a 90, letras mayúsculas
@@ -25,14 +25,15 @@ function cipher() {
     }
   }
   return alert("El texto cifrado es: " + cipherPhrase);
-}
+};
+
 
 // Descifra un texto codificado por el cifrado César.
-function deCipher() {
+let deCipher = () => {
   // Se obtiene el texto a descifrar
-  var phrase2 = prompt("Escribe el texto a descifrar");
-  var charValue2 = 0;
-  var deCipherPhrase = "";
+  let phrase2 = prompt("Escribe el texto a descifrar");
+  let charValue2 = 0;
+  let deCipherPhrase = "";
   for (var i = 0; i < phrase2.length; i++) {
     // Obtiene el valor ASCII del elemento.
     charValue2 = phrase2.charCodeAt(i);
@@ -48,7 +49,8 @@ function deCipher() {
     }
   }
   return alert("El texto descifrado es: " + deCipherPhrase);
-}
+};
+
 
 cipher();
 deCipher();
